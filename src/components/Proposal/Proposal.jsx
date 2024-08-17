@@ -13,7 +13,7 @@ const Proposal = () => {
         <Button BtnText={`Get your free proposal`} btnStyle={`bg-blackPrimary text-white`}/>
       </div>
       <div className="scale-125 order-1 md:order-2">
-        <img src="/public/image/Proposal.svg" alt="" />
+        <img src="/image/Proposal.svg" alt="" />
       </div>
       </div>
     </section>
