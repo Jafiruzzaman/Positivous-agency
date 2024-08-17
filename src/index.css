@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  body{
+    @apply font-fontPrimary bg-white
+  }
+  .span-green-style{
+    @apply text-blackPrimary bg-greenPrimary text-[30px]
+  }
+  .span-white-style{
+    @apply bg-white text-blackPrimary 
+  }
+  .borderPrimary{
+    @apply border-1 border-blackPrimary
+  }
+  .paragraph{
+    @apply text-[18px] text-blackPrimary leading-normal
+  }
+  .h1{
+    @apply leading-normal text-[60px] font-bold text-blackPrimary
+  }
+  .button{
+    @apply px-[20px] py-[35px] border-borderPrimary rounded-[14px]
+  }
+}
