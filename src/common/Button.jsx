@@ -1,6 +1,8 @@
-const Button = () => {
+/* eslint-disable react/prop-types */
+// @ts-ignore
+const Button = ({btnStyle,BtnText}) => {
   return (
-    <button className="button">Button</button>
+    <button className={`button ${btnStyle}`}>{BtnText}</button>
   )
 }
 

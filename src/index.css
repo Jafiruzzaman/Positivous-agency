@@ -6,7 +6,7 @@
 
 @layer base{
   body{
-    @apply font-fontPrimary bg-white
+    @apply font-fontPrimary bg-white overflow-x-hidden
   }
   .span-green-style{
     @apply text-blackPrimary bg-greenPrimary text-[30px]
@@ -24,6 +24,15 @@
     @apply leading-normal text-[60px] font-bold text-blackPrimary
   }
   .button{
-    @apply px-[20px] py-[35px] border-borderPrimary rounded-[14px]
+    @apply px-[32px] py-[12px] border-borderPrimary rounded-[14px] border border-blackPrimary
   }
+}
+html{
+  scroll-behavior: smooth;
+}
+.menu-normal{
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.active{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
