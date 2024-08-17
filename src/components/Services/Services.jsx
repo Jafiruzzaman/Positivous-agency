@@ -86,7 +86,7 @@ const Services = () => {
               key={index}
             >
               {/* text */}
-              <div className="flex items-start justify-between space-y-8 order-2 md:order-1 lg:space-y-32 flex-col">
+              <div className="flex items-start justify-between space-y-8 md:order-1 order-2  lg:space-y-32 flex-col">
                 <div className="flex flex-col gap-0">
                   <span
                     className={`${item.spanStyle} w-fit rounded-md px-2 text-[23px]`}
@@ -109,7 +109,7 @@ const Services = () => {
                 </div>
               </div>
               {/* image */}
-              <div className="">
+              <div className="order-1 lg:order-2 max-w-[100%]">
                 <img src={item.image} alt="services image" />
               </div>
             </div>

@@ -18,10 +18,13 @@
     @apply border-1 border-blackPrimary
   }
   .paragraph{
-    @apply lg:text-[18px] text-[16px] text-blackPrimary leading-normal
+    @apply lg:text-[18px] text-[15px] text-blackPrimary leading-normal
   }
   .h1{
     @apply leading-[1.3] lg:text-[60px] text-[38px] font-bold text-blackPrimary
+  }
+  .h2{
+    @apply leading-[1.3] lg:text-[34px] text-[26px] font-medium text-blackPrimary
   }
   .button{
     @apply px-[32px] py-[12px] border-borderPrimary rounded-[14px] border border-blackPrimary
