@@ -10,7 +10,7 @@ const MobileNav = () => {
   return (
     <nav>
       <div
-        className="hover:cursor-pointer hover:bg-greenPrimary px-1 py-1 rounded-md"
+        className="px-1 py-1 rounded-md hover:cursor-pointer hover:bg-greenPrimary"
         onClick={toggleMenu}
       >
         {showMenu ? (

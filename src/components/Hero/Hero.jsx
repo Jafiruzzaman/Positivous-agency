@@ -1,7 +1,7 @@
 import Button from "../../common/Button"
 const Hero = () => {
   return (
-    <section className="container mx-auto lg:mt-[4rem] mt-6 flex items-center justify-between xl:flex-row flex-col xl:gap-5 gap-12">
+    <section className="container mx-auto lg:mt-[4rem] mt-6 flex items-center justify-between lg:flex-row flex-col xl:gap-5 gap-12">
       {/* text */}
       <div className="flex items-start flex-col gap-4 lg:gap-[35px] order-1">
         <h1 className="h1 lg:max-w-[32rem] max-w-full">

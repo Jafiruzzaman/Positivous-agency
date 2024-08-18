@@ -84,11 +84,7 @@ const Contact = () => {
           <div
             className={`overflow-auto hidden top-0 right-0 lg:flex items-end lg:absolute lg:-right-[18rem] scale-110 lg:top-0`}
           >
-            <img
-              src="/image/contact/contact.svg"
-              alt=""
-              className={``}
-            />
+            <img src="/image/contact/contact.svg" alt="" className={``} />
           </div>
         </div>
       </div>

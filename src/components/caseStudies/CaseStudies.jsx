@@ -29,14 +29,18 @@ const CaseStudies = () => {
         />
       </div>
 
-      <div className="bg-blackPrimary md:py-20 py-10 px-8 my-12 rounded-3xl grid grid-cols-1 md:grid-cols-2 flex-col lg:grid-cols-3 md:gap-6">
+      <div className="grid flex-col grid-cols-1 px-8 py-10 my-12 bg-blackPrimary md:py-20 rounded-3xl md:grid-cols-2 lg:grid-cols-3 md:gap-6">
         {CaseStudiesData.map((item, index) => {
           return (
             <div key={index} className="flex flex-col items-start">
-              <p className={`${item.border} px-2 text-white paragraph border-r-2`}>{item.heading}</p>
+              <p
+                className={`${item.border} px-2 text-white paragraph border-r-2`}
+              >
+                {item.heading}
+              </p>
               <div className="flex items-center gap-3 text-greenPrimary hover:cursor-pointer">
-              <Button BtnText={item.buttonText} btnStyle={`px-2`} />
-              <MdArrowOutward  className="text-2xl hover:rotate-45 transition-all"/>
+                <Button BtnText={item.buttonText} btnStyle={`px-2`} />
+                <MdArrowOutward className="text-2xl transition-all hover:rotate-45" />
               </div>
             </div>
           );

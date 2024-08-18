@@ -1,4 +1,3 @@
-
 const Company = () => {
   return (
     <section className="container mx-auto overflow-x-hidden xl:my-16 ">
@@ -11,7 +10,7 @@ const Company = () => {
         <img src="/company/Company logo-5.png" alt="" />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Company
+export default Company;

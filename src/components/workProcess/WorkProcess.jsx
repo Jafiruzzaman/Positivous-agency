@@ -40,26 +40,27 @@ const WorkProcessData = [
 ];
 
 const WorkProcess = () => {
-  
   return (
-    <section className="container mx-auto xl:my-36 my-24">
+    <section className="container mx-auto my-24 xl:my-36">
       <div className="">
         <Common
           paragraphText={`Step-by-Step Guide to Achieving Your Business Goals`}
           spanText={`Our Working Process `}
         />
       </div>
-    <div className="">
-      {
-        WorkProcessData.map((item,index)=>{
-          return(
+      <div className="">
+        {WorkProcessData.map((item, index) => {
+          return (
             <div key={index}>
-            <Accordian num={item.num} heading={item.heading} paragraph={item.paragraph} />
+              <Accordian
+                num={item.num}
+                heading={item.heading}
+                paragraph={item.paragraph}
+              />
             </div>
-          )
-        })
-      }
-    </div>
+          );
+        })}
+      </div>
     </section>
   );
 };

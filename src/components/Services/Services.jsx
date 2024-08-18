@@ -34,7 +34,7 @@ const ServicesData = [
     image: imageThree,
     spanStyle: "span-white-style",
     iconStyle: "bg-white text-blackPrimary",
-    paragraphStyle:"text-white"
+    paragraphStyle: "text-white",
   },
   {
     textOne: "Email",
@@ -63,14 +63,14 @@ const ServicesData = [
     buttonStyle: "text-white",
     spanStyle: "span-green-style",
     iconStyle: "bg-white text-blackPrimary",
-    paragraphStyle:"text-white"
+    paragraphStyle: "text-white",
   },
 ];
 import { MdArrowOutward } from "react-icons/md";
 
 const Services = () => {
   return (
-    <section className="container mx-auto xl:my-24 my-12">
+    <section className="container mx-auto my-12 xl:my-24">
       {/* common components */}
       <div className="" id={`services`}>
         <Common
@@ -86,7 +86,7 @@ const Services = () => {
               key={index}
             >
               {/* text */}
-              <div className="flex items-start justify-between space-y-8 md:order-1 order-2  lg:space-y-32 flex-col">
+              <div className="flex flex-col items-start justify-between order-2 space-y-8 md:order-1 lg:space-y-32">
                 <div className="flex flex-col gap-0">
                   <span
                     className={`${item.spanStyle} w-fit rounded-md px-2 text-[23px]`}
@@ -100,12 +100,14 @@ const Services = () => {
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                <div
-                  className={`${item.iconStyle} p-2 text-[30px] hover:cursor-pointer hover:rotate-45 w-fit transition-all duration-300 rounded-full`}
-                >
-                  <MdArrowOutward />
-                </div>
-                  <p className={`paragraph ${item.paragraphStyle}`}>Learn more</p>
+                  <div
+                    className={`${item.iconStyle} p-2 text-[30px] hover:cursor-pointer hover:rotate-45 w-fit transition-all duration-300 rounded-full`}
+                  >
+                    <MdArrowOutward />
+                  </div>
+                  <p className={`paragraph ${item.paragraphStyle}`}>
+                    Learn more
+                  </p>
                 </div>
               </div>
               {/* image */}
