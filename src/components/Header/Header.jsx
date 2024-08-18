@@ -3,7 +3,7 @@ import MobileNav from "./MobileNav"
 
 const Header = () => {
   return (
-    <header className="sticky flex items-center justify-between container mx-auto py-4 lg:py-8">
+    <header className="sticky top-0 left-0 right-0 z-20 bg-white flex items-center justify-between container mx-auto py-4 lg:py-8">
       {/* logo */}
       <div className="flex gap-1 md:gap-2">
         <img src="/image/Logo.svg" alt="" className="max-w-[25px] md:max-w-fit"/>
