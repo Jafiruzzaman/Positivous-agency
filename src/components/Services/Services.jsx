@@ -72,7 +72,7 @@ const Services = () => {
   return (
     <section className="container mx-auto xl:my-24 my-12">
       {/* common components */}
-      <div className="">
+      <div className="" id={`services`}>
         <Common
           spanText={`services`}
           paragraphText={`At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:`}
