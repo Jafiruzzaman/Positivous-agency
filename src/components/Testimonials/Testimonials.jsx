@@ -1,6 +1,5 @@
 import 'swiper/css';
 import Common from "../../common/Common";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import imageOne from "/user/user-01.png";
 import imageTwo from "/user/user-02.png";
 import imageThree from "/user/user-03.png";
@@ -60,8 +59,8 @@ const Testimonials = () => {
           return(
             <div className="p-12" key={index}>
               <div className="">
-              <div className="border relative rounded-xl p-4 border-greenPrimary ">
-                <h5 className='text-white text-sm p-5 '>
+              <div className="relative p-4 border rounded-xl border-greenPrimary ">
+                <h5 className='p-5 text-sm text-white '>
                 <FaQuoteLeft className={`absolute left-2 top-6 text-2xl text-white`}/>
                   {item.review}
                 <FaQuoteRight  className={`text-2xl text-white absolute right-16 bottom-8`}/>
